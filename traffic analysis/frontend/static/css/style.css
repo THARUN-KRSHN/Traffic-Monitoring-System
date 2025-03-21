@@ -1,0 +1,104 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #232526, #414345);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.traffic-section, .info-section, .image-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Traffic Light */
+.traffic-light-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100px;
+    gap: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Traffic Light Circles */
+.light {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+
+.active { 
+    opacity: 1; 
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8); 
+}
+
+/* Dynamic Background */
+.traffic-light-container {
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Traffic Status */
+.traffic-status {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Image */
+.image-section img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .traffic-light { width: 80px; }
+    .light { width: 50px; height: 50px; }
+    .image-section img { width: 90%; }
+}
