@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Monitoring System</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Traffic Light Monitoring System</h1>
+        <p>Ensuring smooth and safe traffic flow with real-time monitoring.</p>
+    </header>
+
+    <main>
+        <!-- Traffic Light Simulation -->
+        <section class="traffic-container">
+            <div class="traffic-light">
+                <div class="light red active" id="red"></div>
+                <div class="light yellow" id="yellow"></div>
+                <div class="light green" id="green"></div>
+            </div>
+            <p class="traffic-status">Current Light: <span id="current-light">Red</span></p>
+            <button onclick="toggleAutoMode()" id="auto-toggle">Start Auto Mode</button>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Traffic Light Monitoring</h2>
+            <p>
+                Traffic light monitoring systems help analyze vehicle flow, reduce congestion, and improve road safety.
+                Advanced technologies allow for optimizing traffic signals and ensuring efficient traffic management.
+            </p>
+        </section>
+
+        <!-- Traffic Monitoring Section -->
+        <section class="traffic-monitoring">
+            <h2>Traffic Data Analysis</h2>
+            <p>View real-time traffic analysis and congestion data.</p>
+            <a href="http://127.0.0.1:5000/api/traffic_analysis" class="btn">View Analysis</a>
+        <!-- Contact Us Section -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: tharunkrishnacu@gmail.com</p>
+            <p>Phone: +91 9778585423</p>
+        </section>
+    </main>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>
